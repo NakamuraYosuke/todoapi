@@ -8,7 +8,7 @@ module.exports.connect = function(params, callback) {
     Item = sequlz.define('Item', {
         id: { type: Sequelize.BIGINT,
             primaryKey: true, uniqu: true, allowNull: false,
-            autoIncrement: true}
+            autoIncrement: true},
         description: { type: Sequelize.STRING,
             allowNull: true},
         done: { type: Sequelize.BOOLEAN,
