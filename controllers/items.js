@@ -32,6 +32,7 @@ exports.list = function(req, res, next) {
                 model.countAll(function(err, n) {
                     if (err) {
                         next(err);
+                    }
                     else {
                         if (n) {
                             var page = {
