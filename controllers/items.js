@@ -14,7 +14,7 @@ exports.context = function(server, path, itemsModel) {
     server.post(context + '/', this.save);
     server.del(context + '/:id', this.destroy);
 
-    model = itemModel;
+    model = itemsModel;
 
 };
 
