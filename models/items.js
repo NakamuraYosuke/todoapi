@@ -3,7 +3,7 @@ var Sequelize = require("sequelize");
 var Item = undefined;
 
 module.exports.connect = function(params, callback) {
-    var sequlz = new Sequilize(
+    var sequlz = new Sequelize(
         params.dbname, params.username, params.password, params.params);
     Item = sequlz.define('Item', {
         id: { type: Sequelize.BIGINT,
