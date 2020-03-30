@@ -21,12 +21,10 @@ serverinfo.context(server, '/todo/api');
 
 var port = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080;
 server.listen(port, function (err) {
-    if (err) {
+    if (err)
         console.error(err);
-    }
-    else {
+    else
         console.log('App is ready ad : ' + port);
-    }
 });
 
 if (process.env.environment == 'production')
