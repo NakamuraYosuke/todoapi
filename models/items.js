@@ -99,7 +99,7 @@ exports.countAll = function(callback) {
 exports.listAll = function(page, sortField, sortDirection, callback) {
     Item.findAll({ offset: 10 * (page -1), linit: 10, order: [[sortField, sortDirection]] }).then(function(item) {
         var theitems = [];
-        items.forEach(function(item) {
+        item.forEach(function(item) {
             theitems.push({
                 id: item.id, description: item.description, done: item.done });
         });
